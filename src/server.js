@@ -6,7 +6,7 @@ const proxyHandler = require('./routes/proxy')
 const init = async () => {
 
     const server = Hapi.server({
-        port: 8080,
+        port: process.env.PORT || 8080,
         host: 'localhost',
     })
 
