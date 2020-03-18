@@ -1,0 +1,37 @@
+{
+  "name": "cors-bypasser",
+  "version": "1.0.0",
+  "description": "To bypass cors",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node ./src/server.js",
+    "dev": "nodemon --watch src ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavea/cors-bypass.git"
+  },
+  "keywords": [
+    "cors"
+  ],
+  "author": "Ilma Arifiany",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flavea/cors-bypass/issues"
+  },
+  "homepage": "https://github.com/flavea/cors-bypass#readme",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
