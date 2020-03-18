@@ -7,6 +7,16 @@ const init = async () => {
 
     const server = Hapi.server({
         port: process.env.PORT || 8080,
+        routes: {
+            cors: {
+                origin: ['*'],
+                headers: ['Authorization'],
+                exposedHeaders: ['Accept'],
+                additionalExposedHeaders: ['Accept'],
+                maxAge: 60,
+                credentials: true,
+            },
+        },
     })
 
     server.route({
